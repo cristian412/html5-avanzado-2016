@@ -26,9 +26,12 @@ function conectar($orden){
 
 $var = 'HECTOR';
 $botones = '';
-$li = peticion("show tables");
+$li = peticion("Select id_personas, nombre, apellido from personas");
 
-
+$botones = '';
+foreach($li as $value){
+  $botones.='<button style="background-color:red">'.$value['id_personas'].' = '.$value['nombre'].' + '.$value['apellido'].'</button> - ';
+}
 
 
 ?>
@@ -55,7 +58,7 @@ $li = peticion("show tables");
     <?=print_r($li)?>
   </pre>
   <h3>
-   Hola--- <?=$br?>
+   Hola--- <?=$botones?>
   </h3>
   
   
