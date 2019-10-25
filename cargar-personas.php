@@ -5,7 +5,7 @@ if( isset($_POST) ){
 
 	$res.= '<pre>';
 	foreach($_POST as $v){
-		$res.= $v;
+		$res.= $v.' ';
 	}
 	$res.= '</pre>';
 
