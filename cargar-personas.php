@@ -4,8 +4,8 @@ $res = '<h2>Respuesta: </h2>';
 if( isset($_POST) ){
 
 	$res.= '<pre>';
-	foreach($_POST as $v){
-		$res.= $v.' ';
+	foreach($_POST as $key => $v){
+		$res.= $key.'  --> '.$v.' ';
 	}
 	$res.= '</pre>';
 
