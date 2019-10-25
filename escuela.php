@@ -26,9 +26,7 @@ function conectar($orden){
 $var = 'HECTOR';
 $botones = '';
 $li = peticion("show tables");
-foreach($li as $value){
-  $botones.='<button style="background-color:red">'.$value.'</button> - ';
-}
+
 
 
 
@@ -52,9 +50,9 @@ foreach($li as $value){
 </head>
 <body>
 <h1>Lecciones html <?=$var?>  </h1>
-  <H2>
-    <?=$botones?>
-  </H2>
+  <pre>
+    <?=print_r($li)?>
+  </pre>
   <h3>
    Hola--- <?=$br?>
   </h3>
