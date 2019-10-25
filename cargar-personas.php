@@ -13,7 +13,7 @@ function insertar($orden){
 }
 
 $res = '<h2>Respuesta: </h2>';
-if( isset($_POST) ){
+if( isset($_POST['nombrex']) ){
 
 	$res.= '<pre>';
 	foreach($_POST as $key => $v){
