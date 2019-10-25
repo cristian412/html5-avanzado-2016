@@ -20,8 +20,9 @@ if( isset($_POST) ){
 		$res.= $key.'  --> '.$v.' ';
 	}
 	$res.= '</pre>';
-	
-	insertar("INSERT INTO `personas` (`nombre`, `apellido`) VALUES ('{$_POST['nombrex']}', '{$_POST['apellidox'}')");
+	$nom = $_POST['nombrex'];
+	$ape = $_POST['apellidox'];
+	insertar("INSERT INTO `personas` (`nombre`, `apellido`) VALUES ('{$nom}', '{$ape}')");
 
 }
 
