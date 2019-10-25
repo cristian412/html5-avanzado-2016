@@ -6,6 +6,8 @@
 <body>
 
 <?php echo "HOLA MUNDO!!!"?>
+<?php echo phpinfo()?>
+	
 
 </body>
 </html>
