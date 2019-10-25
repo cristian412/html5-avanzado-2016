@@ -25,9 +25,9 @@ function conectar($orden){
 
 $var = 'HECTOR';
 $botones = '';
-$li = peticion("select * from estado");
+$li = peticion("show tables");
 foreach($li as $value){
-  $botones.='<button style="background-color:red">'.$value['name_estado'].'</button> - ';
+  $botones.='<button style="background-color:red">'.$value.'</button> - ';
 }
 
 
