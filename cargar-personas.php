@@ -21,7 +21,7 @@ if( isset($_POST) ){
 	}
 	$res.= '</pre>';
 	
-	insertar("INSERT INTO `personas` (`nombre`, `apellido`) VALUES ('{$nombrex}', '{$apellidox}')");
+	insertar("INSERT INTO `personas` (`nombre`, `apellido`) VALUES ('{$_POST['nombrex']}', '{$_POST['apellidox'}')");
 
 }
 
