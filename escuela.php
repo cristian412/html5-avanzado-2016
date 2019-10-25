@@ -11,6 +11,17 @@ function peticion($orden){
   mysqli_close($con);
   return $li;
 }
+function conectar($orden){
+  ########### CONEXION #########################################
+  $user = 'b4924e9e775cc0';
+  $pass = 'aca33d65';
+  $db   = 'heroku_d00b69afc685a2e';
+  $con = mysqli_connect("localhost",$user,$pass,$db);
+  $res = mysqli_query($con, $orden);
+  mysqli_free_result($res);
+  mysqli_close($con);
+  return $res;
+}
 
 $var = 'HECTOR';
 $botones = '';
