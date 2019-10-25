@@ -4,7 +4,7 @@ $res = '<h2>Respuesta: </h2>';
 if( isset($_POST) ){
 
 	$res.= '<pre>';
-	$res.= print_r($_POST);
+	$res.= var_dump($_POST);
 	$res.= '</pre>';
 
 }
