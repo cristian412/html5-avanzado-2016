@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Cargar personas</title>
+	<style>
+		body{
+		margin-left: 200px;
+		}
+	</style>
 </head>
 <body>
 
@@ -9,9 +14,11 @@
 
 <form method="post" action="cargar-personas">
   <label>NOMBRE</label> <input type="text" name="nombrex" />
-  <br>
+  <br><br>
   <label>APELLIDO</label> <input type="text" name="apellidox" />
 
+  <br><br>
+	
   <input type="submit" name="submitx"/>
 
 </form>
