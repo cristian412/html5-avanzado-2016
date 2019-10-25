@@ -30,7 +30,7 @@ if( isset($_POST) ){
 
 <?=$res?>
 	
-<form method="post" action="cargar-personas">
+<form method="post" action="cargar-personas.php">
   <label>NOMBRE</label> <input type="text" name="nombrex" />
   <br><br>
   <label>APELLIDO</label> <input type="text" name="apellidox" />
