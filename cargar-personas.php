@@ -77,7 +77,7 @@ if( isset($_POST['nombrex']) ){
 		h2{
 			color:red;
 		}
-		th{
+		td{
 			border: 1px solid lightBlue;
 			width: 100px;
 		}
