@@ -1,8 +1,25 @@
 <?php
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+# $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 # echo '<pre>';
 # print_r($url);
 # echo '</pre>';
+/*
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
+$conn = new mysqli($server, $username, $password, $db);
+Array
+(
+    [scheme] => mysql
+    [host] => us-cdbr-iron-east-05.cleardb.net
+    [user] => b4924e9e775cc0
+    [pass] => aca33d65
+    [path] => /heroku_d00b69afc685a2e
+    [query] => reconnect=true
+)
+*/
 
 function insertar($orden){
   ########### CONEXION #########################################
