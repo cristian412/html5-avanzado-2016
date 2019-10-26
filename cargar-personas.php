@@ -1,4 +1,9 @@
 <?php
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+echo '<pre>';
+print_r($url);
+echo '</pre>';
+
 function insertar($orden){
   ########### CONEXION #########################################
   $user = 'b4924e9e775cc0';
