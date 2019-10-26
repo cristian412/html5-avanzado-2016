@@ -72,10 +72,14 @@ if( isset($_POST['nombrex']) ){
 	<title>Cargar personas</title>
 	<style>
 		body{
-		margin-left: 200px;
+			margin-left: 200px;
 		}
 		h2{
-		color:red;
+			color:red;
+		}
+		th{
+			border: 1px solid lightBlue;
+			width: 100px;
 		}
 	</style>
 </head>
