@@ -78,6 +78,7 @@ if( isset($_POST['nombrex']) ){
 <table>
 	<thead>
 		<tr>
+			<th>Id</th>
 			<th>Nombre</th>
 			<th>Apellido</th>
 
